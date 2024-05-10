@@ -5,6 +5,8 @@ var mongoose = require('mongoose');
 const cors = require('cors');
 
 
+mongoose.set('strictQuery', false);
+
 mongoose.connect("mongodb+srv://Joel:123@full-stack-web-applicat.fqa1a2h.mongodb.net/test&SolentNursery_childList",{useNewUrlParser: true,  useUnifiedTopology: true },function checkDB(error)
 
 
