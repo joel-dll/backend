@@ -3,7 +3,8 @@ var server = express();
 var routes = require('./routes/routes');
 var mongoose = require('mongoose');
 const cors = require('cors');
-mongoose.connect("mongodb+srv://Joel:123@full-stack-web-applicat.fqa1a2h.mongodb.net/SolentNursery_childList",{useNewUrlParser: true,  useUnifiedTopology: true },function checkDB(error)
+
+mongoose.connect("mongodb+srv://Joel:123@full-stack-web-applicat.fqa1a2h.mongodb.net/test&SolentNursery_childList",{useNewUrlParser: true,  useUnifiedTopology: true },function checkDB(error)
 {
     if(error)
     {
