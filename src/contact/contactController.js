@@ -1,20 +1,15 @@
-const mongoose = require('../../server').mongoose;
+const ContactService = require('./contactService');
 
-// Assuming a Contact model is already defined in the models folder
-var Contact = require('./contactModel');
-
-exports.createContact = function(req, res) {
-    const newContact = new Contact({
-        name: req.body.name,
-        email: req.body.email,
-        message: req.body.message
-    });
-
-    newContact.save(function(err) {
-        if (err) {
-            res.status(500).send({ message: "Some error occurred while creating the contact." });
-        } else {
-            res.send({ message: "Contact successfully created!" });
-        }
-    });
+exports.createContact = async function(req, res) {
+    try {
+        const contactData = {
+            name: req.body.name,
+            email: req.body.email,
+            message: req.body.message
+        };
+        const result = await ContactService.addContact(contactData);
+        res.status(201).send(result);
+    } catch (error) {
+        res.status(500).send({ message: "Some error occurred while creating the contact.", error: error.message });
+    }
 };
