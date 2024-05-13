@@ -17,7 +17,7 @@ mongoose.connect("mongodb+srv://Joel:123@full-stack-web-applicat.fqa1a2h.mongodb
     }
     else
     {
-        console.log("Mongo DB Connected!")
+        console.log("Mongo DB (test&SolentNursery_childList) Connected!")
     }
 });
 
@@ -33,6 +33,6 @@ server.listen(8000,function check(error)
     }
     else
     {
-        console.log("Started!")
+        console.log("Server started on Port 8000 (http://localhost:8000)")
     }
 });
