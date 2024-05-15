@@ -10,9 +10,6 @@ var userController = require('../src/user/userController');
 // Import the contact controller to handle requests related to contact operations.
 var contactController = require('../src/contact/contactController');
 
-// Import the student controller to handle requests related to student operations.
-var studentController = require('../src/student/studentController');
-
 
 
 // Define a route to handle GET requests for fetching all users using the user controller's function.
