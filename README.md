@@ -16,6 +16,8 @@ What you need to install the software:
 - Express v4.19.2
 - mongoose 6.12.8
 
+  (very important to install those versions to have a full compatibility between backend and frontend)
+
 ### Installing
 
 A step by step series of examples that tell you how to get a development environment running.
