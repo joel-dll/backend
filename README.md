@@ -60,3 +60,29 @@ This command will start the server with the settings appropriate for a productio
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
    MIT - https://github.com/libeyondea/backend-node-express/blob/main/LICENSE
+
+## Overview of Your Backend Structure
+
+node_modules: Contains all the npm packages your project depends on, installed via npm install.
+routes
+
+routes.js: This file typically contains the routing logic, directing incoming HTTP requests to the correct controllers based on the URL and HTTP method.
+src
+
+contact and user: These folders seem to be organized by business logic domain, which is a good practice for separation of concerns.
+
+contactController.js, userController.js: These files handle incoming HTTP requests, interact with models or services to retrieve data, and send responses.
+
+contactModel.js, userModel.js: Define the data structures and interact with the database.
+
+contactService.js, userService.js: Contain business logic, making decisions, and calling the model's methods.
+
+package.json and package-lock.json
+
+package.json defines project dependencies, scripts, and other configurations necessary for the setup.
+package-lock.json ensures that the same versions of each package are installed to maintain consistency across environments.
+server.js
+
+This is likely the entry point of your application, setting up the server, connecting middleware, and starting to listen on a port.
+
+
