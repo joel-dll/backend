@@ -81,6 +81,21 @@ package.json and package-lock.json
 
 package.json defines project dependencies, scripts, and other configurations necessary for the setup.
 package-lock.json ensures that the same versions of each package are installed to maintain consistency across environments.
+
+backend/
+├─ node_modules/
+├─ src/
+│  ├─ contact/
+│  ├─ user/
+│  ├─ middleware/
+│  ├─ utils/
+│  └─ config/
+├─ routes/
+├─ database/
+├─ tests/
+├─ package.json
+├─ package-lock.json
+└─ server.js
 server.js
 
 This is likely the entry point of your application, setting up the server, connecting middleware, and starting to listen on a port.
